@@ -12,7 +12,7 @@ int main(int argc, char* argv[])
 		/**
 		 * Call the functions, set the size of the object, calculate volume, surface and check if it's a Cube 
 		 **/
-	set_size(&brick, 1, 1, 1);
+	set_size(&brick, 1, 5, 10);
 	volume = calc_volume(&brick);
 	surface = calc_surface(&brick);
 	isItCube = isObjCube(&brick);

@@ -37,7 +37,7 @@ double calc_surface(const Brick* brick)
 int isObjCube(const Brick* brick)
 {
 	int boolean;
-	if(brick->a == brick->b == brick->c){
+	if(brick->a == brick->b && brick->b == brick->c){
 		boolean = 1;
 	}	else {
 		boolean = 0;
