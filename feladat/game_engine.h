@@ -12,9 +12,6 @@ struct Universe
     struct Character* controlled_character;
 };
 
-/*
- * The main loop of the game.
- */
 void game_engine_update(struct Universe* universe);
 
 void move_characters_and_check_collosions(struct Universe* universe);

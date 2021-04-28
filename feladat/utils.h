@@ -4,7 +4,7 @@
 #include <GL/glut.h>
 #include <math.h>
 #include <stdlib.h>
-#include <time.h> // used only for random
+#include <time.h>
 
 #define TRUE 1
 #define FALSE 0
@@ -31,9 +31,6 @@ struct Color {
 	GLfloat r,g,b,a;
 };
 
-/**
- * Calculates radian from degree.
- */
 double degree_to_radian(double degree);
 
 double absolute_value(double number);
