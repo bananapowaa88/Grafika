@@ -1,0 +1,1 @@
+A grafika beadandóm egy karakter irányítását teszi lehetővé egy megadott térben. Third-person kameranézetből látható az irányítható karakter.
