@@ -14,8 +14,7 @@ struct Action
     int move_backward;
     int turn_left;
     int turn_right;
-    int throw_start;
-    int throw_end;
+    int jump;
 };
 
 typedef enum {ALL, AMBIENT, RED, GREEN, SPECULAR} light_setting_type;

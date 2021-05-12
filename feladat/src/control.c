@@ -12,7 +12,8 @@ void update_player_character(struct Character* character)
     if(action.move_forward == TRUE)
     { character->speed = NORMAL_SPEED; }
     else
-    { character->speed = STOP_SPEED;
+    { 
+        character->speed = STOP_SPEED;
         if(action.move_backward == TRUE)
         { character->speed = -1*NORMAL_SPEED; }
         else
@@ -23,6 +24,8 @@ void update_player_character(struct Character* character)
     { character->face += TURN_SPEED; }
     if(action.turn_right == TRUE)
     { character->face -= TURN_SPEED; }
+    
+   
     
 
 }
@@ -62,6 +65,9 @@ void key_handler(unsigned char key, int x, int y)
 	case 'd':
         action.turn_right = TRUE;
 		break;
+    case 'q':
+        action.jump = TRUE;
+		break;    
         
     case 'z':
         light_setting = ALL;
@@ -161,9 +167,10 @@ void key_up_handler(unsigned char key, int x, int y)
 	case 'd':
         action.turn_right = FALSE;
 		break;
-	case ' ':
-        action.throw_start = FALSE;
-        break;
+    case 'q':
+        action.jump = FALSE;
+		break; 
+
 	}
 
 	glutPostRedisplay();

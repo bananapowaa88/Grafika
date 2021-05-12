@@ -178,10 +178,10 @@ void reshape(GLsizei width, GLsizei height)
         y = (height - h) / 2;
     }
 
-    glViewport (x, y, w, h);
-	glMatrixMode(GL_PROJECTION);
-	glLoadIdentity();
-	gluPerspective(50.0, (GLdouble)width / (GLdouble)height, 0.01, 10000.0);
+    glViewport(x, y, w, h);
+    glMatrixMode(GL_PROJECTION);
+    glLoadIdentity();
+    gluPerspective(VIEWPORT_ASPECT, VIEWPORT_RATIO, 0.01, 10000.0);
 }
 
 

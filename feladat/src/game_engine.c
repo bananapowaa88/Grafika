@@ -16,6 +16,13 @@ void move_man_back(struct Character* character)
     character->pos.y += cos(degree_to_radian(character->face))*character->speed;
 }
 
+void move_man_jump(struct Character* character)
+{
+    character->pos.y += 50;
+
+}
+
+
 void collosion_detect_man_box(struct Character* character, struct Universe* universe)
 {
     struct Box b_box;

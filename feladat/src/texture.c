@@ -29,7 +29,7 @@ void init_textures()
 {
     box_texture.brick = load_texture("data/img/brick.png");
     box_texture.grass = load_texture("data/img/grass.png");
-    box_texture.wood = load_texture("data/img/wooden_box.png");
+    box_texture.wood = load_texture("data/img/skin.png");
     character_texture.skin = load_texture("data/img/skin.png");
     character_texture.white_cloth = load_texture("data/img/white_cloth.png");
     character_texture.red_cloth = load_texture("data/img/red_cloth.png");

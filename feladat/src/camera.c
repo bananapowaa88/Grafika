@@ -13,6 +13,16 @@ void init_camera(struct Camera* camera)
     camera->pose.z = 0;
 }
 
+void set_camera_speed(struct Camera* camera, double speed)
+{
+    camera->pose.y = speed;
+}
+
+void set_camera_side_speed(struct Camera* camera, double speed)
+{
+    camera->pose.x = speed;
+}
+
 void set_camera_on_character(struct Camera* camera, struct Character* character)
 {
     camera->position.x = character->pos.x -

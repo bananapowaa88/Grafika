@@ -13,6 +13,10 @@ struct Camera
 	struct Vertex pose;
 };
 
+void set_camera_speed(struct Camera* camera, double speed);
+
+void set_camera_side_speed(struct Camera* camera, double speed);
+
 void set_camera_on_character(struct Camera* camera, struct Character* character);
 
 void init_camera(struct Camera* camera);

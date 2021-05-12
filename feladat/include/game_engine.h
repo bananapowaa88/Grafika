@@ -22,6 +22,8 @@ void move_man_back(struct Character* character);
 
 void move_man(struct Character* character);
 
+void move_man_jump(struct Character* character);
+
 void inc_points(int id, struct Universe* universe);
 
 #endif // GAME_ENGINE_H
